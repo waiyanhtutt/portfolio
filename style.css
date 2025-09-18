@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+.delay-1 {
+     animation-delay: 0.5s;
+}
+
+.delay-2 {
+     animation-delay: 1.5s;
+}
+
+.delay-3 {
+     animation-delay: 2s;
+}
+
+.btndownload{
+    transition: 2s ease-in-out, 
+   
+}
+
+.btndownload:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    border: none;
+    outline: none;
+}
+
+.card img{
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+}
+
+.progress-bar{
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+.dosection{
+    transition: 1s;
+    cursor: pointer;
+}
+
+.dosection:hover{
+    transform: scale(1.1);
+}
+
+/* Start back to Top Button  */
+.btn-backtotop{
+    border-radius: 10px;
+    padding: 10px;
+
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    z-index: 100;
+}
+/* End back to Top Button  */
