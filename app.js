@@ -119,7 +119,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observerForskill = new IntersectionObserver(
     (entries) => {
+      // console.log(entries); // array
       entries.forEach((entry) => {
+        // console.log("Target", entry.target);
+        // console.log("is Interecting : ", entry.isIntersecting); // is Interecting :  true
         if (entry.isIntersecting) {
           progressBars.forEach((progressbar) => {
             // console.log(progressbar);
@@ -143,6 +146,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const getfullyear = new Date().getFullYear();
   getyear.textContent = getfullyear;
   // End Footer Section
+
+  // check desktop or mobile
+  function isDesktop() {
+    return window.innerWidth > 1024;
+  }
 });
 
 // back to top start
